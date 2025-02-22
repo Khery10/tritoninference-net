@@ -1,0 +1,30 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonInference.Client", "src\TritonInference.Client\TritonInference.Client.csproj", "{250ACCCB-F581-4311-8D62-7F98619E58DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A8362215-2898-4ACC-AFBC-9FF655C4CF93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A5A1DC5A-E6CA-42D3-8AFC-6F955E671D71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonInference.Client.Grpc", "src\TritonInference.Client.Grpc\TritonInference.Client.Grpc.csproj", "{B58EB71D-1BDF-4FC7-A0AF-AEEE56DB095D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{250ACCCB-F581-4311-8D62-7F98619E58DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250ACCCB-F581-4311-8D62-7F98619E58DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250ACCCB-F581-4311-8D62-7F98619E58DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250ACCCB-F581-4311-8D62-7F98619E58DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B58EB71D-1BDF-4FC7-A0AF-AEEE56DB095D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B58EB71D-1BDF-4FC7-A0AF-AEEE56DB095D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B58EB71D-1BDF-4FC7-A0AF-AEEE56DB095D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58EB71D-1BDF-4FC7-A0AF-AEEE56DB095D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{250ACCCB-F581-4311-8D62-7F98619E58DC} = {A8362215-2898-4ACC-AFBC-9FF655C4CF93}
+		{B58EB71D-1BDF-4FC7-A0AF-AEEE56DB095D} = {A8362215-2898-4ACC-AFBC-9FF655C4CF93}
+	EndGlobalSection
+EndGlobal

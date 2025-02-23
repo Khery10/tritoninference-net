@@ -1,2 +1,2 @@
 # tritoninference-net
-.Ner client library for Nvidia Triton Inference Server.
+.Net client library for Nvidia Triton Inference Server.

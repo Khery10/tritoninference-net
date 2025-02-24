@@ -6,4 +6,22 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Google.Protobuf" Version="3.19.4" />
+      <PackageReference Include="Grpc.Net.Client" Version="2.66.0.1" />
+      <PackageReference Include="Grpc.Tools" Version="2.44.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf Include="../../common/protobuf/model_config.proto" GrpcServices="Client" />
+        <Protobuf Include="../../common/protobuf/grpc_service.proto" GrpcServices="Client" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TritonInference.Client\TritonInference.Client.csproj" />
+    </ItemGroup>
+
 </Project>

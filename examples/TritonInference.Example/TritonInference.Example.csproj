@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\src\TritonInference.Binary\TritonInference.Binary.csproj" />
       <ProjectReference Include="..\..\src\TritonInference.Client.Grpc\TritonInference.Client.Grpc.csproj" />
     </ItemGroup>
 

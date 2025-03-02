@@ -4,13 +4,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonInference.Client", "s
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A8362215-2898-4ACC-AFBC-9FF655C4CF93}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A5A1DC5A-E6CA-42D3-8AFC-6F955E671D71}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A5A1DC5A-E6CA-42D3-8AFC-6F955E671D71}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonInference.Client.Grpc", "src\TritonInference.Client.Grpc\TritonInference.Client.Grpc.csproj", "{B58EB71D-1BDF-4FC7-A0AF-AEEE56DB095D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{F4419AA0-0053-4B56-8A03-DF40C8163D23}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonInference.Example", "examples\TritonInference.Example\TritonInference.Example.csproj", "{093E482D-FD70-4257-B92E-ED5A90AAEF59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonInference.Binary", "src\TritonInference.Binary\TritonInference.Binary.csproj", "{3B2BA3E8-94B9-4D74-8522-0B946933538A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonInference.Tests", "TritonInference.Tests\TritonInference.Tests.csproj", "{3916A255-F151-482C-9F6B-50A9318618DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,10 +34,20 @@ Global
 		{093E482D-FD70-4257-B92E-ED5A90AAEF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{093E482D-FD70-4257-B92E-ED5A90AAEF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{093E482D-FD70-4257-B92E-ED5A90AAEF59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B2BA3E8-94B9-4D74-8522-0B946933538A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2BA3E8-94B9-4D74-8522-0B946933538A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2BA3E8-94B9-4D74-8522-0B946933538A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2BA3E8-94B9-4D74-8522-0B946933538A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3916A255-F151-482C-9F6B-50A9318618DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3916A255-F151-482C-9F6B-50A9318618DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3916A255-F151-482C-9F6B-50A9318618DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3916A255-F151-482C-9F6B-50A9318618DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{250ACCCB-F581-4311-8D62-7F98619E58DC} = {A8362215-2898-4ACC-AFBC-9FF655C4CF93}
 		{B58EB71D-1BDF-4FC7-A0AF-AEEE56DB095D} = {A8362215-2898-4ACC-AFBC-9FF655C4CF93}
 		{093E482D-FD70-4257-B92E-ED5A90AAEF59} = {F4419AA0-0053-4B56-8A03-DF40C8163D23}
+		{3B2BA3E8-94B9-4D74-8522-0B946933538A} = {A8362215-2898-4ACC-AFBC-9FF655C4CF93}
+		{3916A255-F151-482C-9F6B-50A9318618DC} = {A5A1DC5A-E6CA-42D3-8AFC-6F955E671D71}
 	EndGlobalSection
 EndGlobal

@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonInference.Example", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonInference.Binary", "src\TritonInference.Binary\TritonInference.Binary.csproj", "{3B2BA3E8-94B9-4D74-8522-0B946933538A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonInference.Tests", "TritonInference.Tests\TritonInference.Tests.csproj", "{3916A255-F151-482C-9F6B-50A9318618DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonInference.Tests", "tests\TritonInference.Tests\TritonInference.Tests.csproj", "{3916A255-F151-482C-9F6B-50A9318618DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

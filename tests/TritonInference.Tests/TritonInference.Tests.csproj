@@ -13,8 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\src\TritonInference.Binary\TritonInference.Binary.csproj" />
-      <ProjectReference Include="..\src\TritonInference.Client\TritonInference.Client.csproj" />
+      <ProjectReference Include="..\..\src\TritonInference.Binary\TritonInference.Binary.csproj" />
+      <ProjectReference Include="..\..\src\TritonInference.Client\TritonInference.Client.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
 using System.Buffers.Binary;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
 namespace TritonInference.Binary;
 
@@ -25,7 +27,15 @@ public static class Bf16Converter
         Span<byte> buf = stackalloc byte[4];
         Zeros.CopyTo(buf);
         source.CopyTo(buf[2..]);
-        
-        return BinaryPrimitives.ReadSingleLittleEndian(buf);
+
+        return ReadSingleLittleEndian(buf);
+    }
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    private static float ReadSingleLittleEndian(ReadOnlySpan<byte> source)
+    {
+        return !BitConverter.IsLittleEndian
+            ? BitConverter.Int32BitsToSingle(BinaryPrimitives.ReverseEndianness(MemoryMarshal.Read<int>(source)))
+            : MemoryMarshal.Read<float>(source);
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using FluentAssertions;
 using TritonInference.Client.Tensors;
 using Xunit;
@@ -11,7 +12,7 @@ public class PrimitiveTritonTensorTest
     {
         var act = () => new PrimitivesTritonTensor<float>(
                       "test",
-                      [1],
+                      new long[] { 1 },
                       TensorDataTypes.Bf16,
                       new[] { 0.1f, 0.2f });
 

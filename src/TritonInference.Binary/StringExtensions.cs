@@ -1,5 +1,3 @@
-using System.Text;
-
 namespace TritonInference.Binary;
 
 public static class StringExtensions
@@ -14,7 +12,7 @@ public static class StringExtensions
             }
         }
     }
-    
+
     private static unsafe int GetUtf8ByteCount(char* chars, int strLen)
     {
         int utfLen = 0;
@@ -33,6 +31,7 @@ public static class StringExtensions
             else
                 utfLen += 2;
         }
+
         return utfLen;
     }
 }

@@ -10,12 +10,14 @@ public record TritonInferenceRequest(
     private readonly List<string> _outputTensors = new();
     public IReadOnlyList<ITritonTensor> Inputs => _inputTensors;
     public IReadOnlyList<string> Outputs => _outputTensors;
-    public string? RequestId { get; init; }
-    public long SequenceId { get; init; } = 0;
-    public bool SequenceStart { get; init; } = false;
-    public bool SequenceEnd { get; init; } = false;
-    public ulong Priority { get; init; } = 0;
-    public long TimeoutUs { get; init; } = 0;
+    public string? RequestId { get; set; }
+    public long SequenceId { get; set; } = 0;
+    public bool SequenceStart { get; set; } = false;
+    public bool SequenceEnd { get; set; } = false;
+    public ulong Priority { get; set; } = 0;
+    public long TimeoutUs { get; set; } = 0;
+    public string Model { get; } = Model;
+    public string ModelVersion { get; } = ModelVersion;
 
     public TritonInferenceRequest AddInputTensor<TDataType>(
         string name,

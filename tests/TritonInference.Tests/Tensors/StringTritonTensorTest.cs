@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using FluentAssertions;
 using TritonInference.Client.Tensors;
 using Xunit;
@@ -10,18 +11,20 @@ public class StringTritonTensorTest
     [MemberData(nameof(TestData))]
     public void SerializeDeserialize_ShouldBeCorrectly(IReadOnlyList<string> data)
     {
-        var inputTensor = new StringTritonTensor("test", [1], data);
-        var outputTensor = new StringTritonTensor("test", [1], inputTensor.GetRawData().ToArray());
+        var inputTensor = new StringTritonTensor("test", new long[] { 1 }, data);
+        var outputTensor = new StringTritonTensor("test", new long[] { 1 }, inputTensor.GetRawData().ToArray());
 
         outputTensor.GetData().Should().BeEquivalentTo(data);
     }
 
     public static TheoryData<IReadOnlyList<string>> TestData()
     {
-        var theoryData = new TheoryData<IReadOnlyList<string>>();
-        theoryData.Add(["sample_1", "sample_2"]);
-        theoryData.Add(["français", "langue", "étrangèr"]);
-        theoryData.Add(["Σὲ", "γνωρίζω", "ἀπὸ"]);
+        var theoryData = new TheoryData<IReadOnlyList<string>>
+                         {
+                             new[] { "sample_1", "sample_2" },
+                             new[] { "français", "langue", "étrangèr" },
+                             new[] { "Σὲ", "γνωρίζω", "ἀπὸ" }
+                         };
         return theoryData;
     }
 }
